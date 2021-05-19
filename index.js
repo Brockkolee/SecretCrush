@@ -98,9 +98,11 @@ function countDown() {
 
     if (timer.innerHTML == 0) {
         clearTimeout(t);
-        roundStart();
+        countDownStart();
+        clickDisable();
+        
         if (startArr.length > 0) {
-                       
+                  
             nextRoundStart();
         } else if (round2Arr.length > 1) {
             document.querySelector(".round").textContent = "Round 2";
