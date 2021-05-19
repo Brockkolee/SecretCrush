@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=KoHo&family=Lobster+Two&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="start" onclick="start();">
+    
+    <h1>Click to Start</h1>
+  </div>
+  <div class="start-page">
+    <div>
+      <div class="start-image-container">
+  
+        <img class="image-border start-image start-image-left" src="./image/male/Rain.png" alt="Male Photo" onclick="male();">
+        <img class="image-border start-image start-image-right" src="./image/female/Alexandra.png" alt="Female Photo" onclick="female();>
+      </div>
+  
+      <div class="logo">
+        <img src="image/Logo.png" alt="logo">
+        <div> </div>
+      </div>
+    </div>
+    <div class="container">
+  
+      <div class="gender-button button-style">
+        <a id="male-button" onclick="male();">
+          Male</a>
+  
+      </div>
+      </a>
+  
+      <div class="gender-button button-style">
+        <a id="female-button" onclick="female();">
+          Female
+        </a>
+      </div>
+      </a>
+    </div>
+
+  </div>
+  <div class="select-page" style="display:none">
+
+    <audio id="home-music" controls style="display:none;"><source src="./audio/homeMusic.mp3" type="audio/mp3"></audio>
+<audio id="start-round" style="display:none" onended="countEnd()">
+    <source src="./audio/countDown.mp3" type="audio/mpeg">
+  </audio>
+<div class="selection-container">
+<div class="selection-group">
+    <img id="image1" class="selection image-border" src="" alt="">
+    <h1 id="image1-name" class="name"></h1>
+</div>
+<div class="timer-group">
+    <h1 class="round">Round 1</h1>
+    <h1 class="timer blob">10</h1>
+    <div class="button-group">
+        <button class="start-button button-style" onclick="startButton()">Start!</button>
+    </div>
+
+</div> 
+<div class="selection-group">
+    <img id="image2" class="selection image-border" src="" alt="">
+    <h1 id="image2-name" class="name"></h1>
+</div>
+</div>
+
+</div>
+
+<audio id="home-music" controls style="display:none;"><source src="./audio/homeMusic.mp3" type="audio/mp3"></audio>
+
+
+  <script src="index.js" type="text/javascript"></script>
+</body>
+<footer>Sound from Zapsplat.com
+
+</footer>
+
+</html>
